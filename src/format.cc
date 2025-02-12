@@ -10,11 +10,6 @@
 FMT_BEGIN_NAMESPACE
 namespace detail {
 
-template FMT_API auto dragonbox::to_decimal(float x) noexcept
-    -> dragonbox::decimal_fp<float>;
-template FMT_API auto dragonbox::to_decimal(double x) noexcept
-    -> dragonbox::decimal_fp<double>;
-
 #if FMT_USE_LOCALE
 // DEPRECATED! locale_ref in the detail namespace
 template FMT_API locale_ref::locale_ref(const std::locale& loc);
